@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vanilla speed test</title>
+    <link rel="stylesheet" media="screen" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+<script type="text/javascript" src="globals.js"></script>
+
+
+<div class="container theme-showcase" role="main">
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+        <h1>Vanilla JS test</h1>
+        <p>This test will run after 1 second:</p>
+        <p>
+            <button type="button" class="btn btn-sm btn-alert" onclick="stopTest();">Stop</button>
+        </p>
+        <p>
+            <button type="button" class="btn btn-sm btn-primary" onclick="showResults();">Results</button>
+        </p>
+    </div>
+
+    <table class="table table-striped">
+        <thead>
+        <th>No.</th>
+        <th>Adjective</th>
+        <th>Color</th>
+        <th>Thing</th>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+</div>
+
+
+<script type="module" src="generate.js"></script>
+<script type="module" src="app.js"></script>
+</body>
+</html>

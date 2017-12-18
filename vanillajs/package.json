@@ -1,0 +1,16 @@
+{
+  "name": "vanillajs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "http-server": "^0.10.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node node_modules/http-server/bin/http-server"
+  },
+  "author": "",
+  "license": "ISC"
+}

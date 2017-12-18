@@ -1,0 +1,31 @@
+<div class="container theme-showcase" role="main">
+
+  <!-- Main jumbotron for a primary marketing message or call to action -->
+  <div class="jumbotron">
+    <h1>Angular 5 test</h1>
+    <p>This test will run after 1 second:</p>
+    <p>
+      <button type="button" class="btn btn-sm btn-alert" onclick="stopTest();">Stop</button>
+    </p>
+    <p>
+      <button type="button" class="btn btn-sm btn-primary" onclick="showResults();">Results</button>
+    </p>
+  </div>
+
+  <table class="table table-striped" id="generated" >
+    <thead>
+    <th>No.</th>
+    <th>Adjective</th>
+    <th>Color</th>
+    <th>Thing</th>
+    </thead>
+    <tbody>
+    <tr *ngFor="let item of data">
+      <td> {{item.id}}</td>
+      <td> {{item.adjective}}</td>
+      <td> {{item.color}}</td>
+      <td> {{item.thing}}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>

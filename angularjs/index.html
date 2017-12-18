@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AngularJS speed test</title>
+    <link rel="stylesheet" media="screen" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+<script type="text/javascript" src="globals.js"></script>
+
+
+<div class="container theme-showcase" role="main" ng-app="testApp" ng-controller="TestController as test">
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+        <h1>Angular JS test</h1>
+        <p>This test will run after 1 second:</p>
+        <p>
+            <button type="button" class="btn btn-sm btn-alert" onclick="stopTest();">Stop</button>
+        </p>
+        <p>
+            <button type="button" class="btn btn-sm btn-primary" onclick="showResults();">Results</button>
+        </p>
+    </div>
+
+    <table class="table table-striped" id="generated" >
+        <thead>
+        <th>No.</th>
+        <th>Adjective</th>
+        <th>Color</th>
+        <th>Thing</th>
+        </thead>
+        <tbody>
+            <tr ng-repeat="(key, value) in data">
+                <td> {{value.id}}</td>
+                <td> {{value.adjective}}</td>
+                <td> {{value.color}}</td>
+                <td> {{value.thing}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="container">
+    <table class="table table-striped" id="result" style="display: none;">
+        <thead>
+        <th>No.</th>
+        <th>Adjective</th>
+        <th>Color</th>
+        <th>Thing</th>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+</div>
+
+
+<script type="text/javascript" src="node_modules/angular/angular.min.js"></script>
+<script type="module" src="generate.js"></script>
+<script type="module" src="app.js"></script>
+</body>
+</html>
